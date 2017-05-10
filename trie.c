@@ -3,6 +3,8 @@
 #include <string.h>
 #include "trie.h"
 
+#define INDENT 22
+
 TrieNode createTrieNode() {
     TrieNode newNode;
     newNode.val = '\0';
@@ -46,7 +48,7 @@ void _printTrie(TrieNode trie, int indent) {
     printf("%c\n", trie.val);
 
     for (int i = 0; i < trie.children_count; i++)
-        _printTrie(trie.children[i], indent + 2);
+        _printTrie(trie.children[i], indent + INDENT);
 }
 
 void printTrie(TrieNode trie) {
