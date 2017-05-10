@@ -3,7 +3,7 @@
 #include <string.h>
 #include "trie.h"
 
-#define INDENT 22
+#define INDENT 2
 
 TrieNode createTrieNode() {
     TrieNode newNode;
